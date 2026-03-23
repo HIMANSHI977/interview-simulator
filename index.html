@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="card active" id="start">
+    <h1>Interview Simulator</h1>
+    <p>Select Category</p>
+
+    <select id="category">
+      <option value="frontend">Frontend</option>
+      <option value="backend">Backend</option>
+      <option value="aiml">AI / ML</option>
+      <option value="other">Teacher / Others</option>
+    </select>
+
+    <button id="startBtn">Start Interview</button>
+  </div>
+
+  <div class="card" id="interview">
+    <div class="top">
+      <span id="progress"></span>
+      <span id="timer"></span>
+    </div>
+
+    <h2 id="question"></h2>
+    <textarea id="answer" placeholder="Type your answer..."></textarea>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div class="card" id="result">
+    <h2>Final Result</h2>
+    <p id="finalScore"></p>
+    <p id="feedback"></p>
+    <button id="restartBtn">Restart</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
